@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
-API_KEY = "AIzaSyCaMV-Z1gvDHLQbOJtb2V77JroghTDVh4U"
+API_KEY = ""
 API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY
 
 async def llm_call(chat_history):
